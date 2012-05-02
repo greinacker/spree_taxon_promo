@@ -3,10 +3,12 @@ SpreeTaxonPromo
 
 This gem adds a Promotion to Spree that allows you to run a promo on products within a certain taxon. So for example, if you had a taxon that looked like
 
+```
 Meals
 Desserts
   Cookies
   Cake
+```
 
 You could have a promo that said something like "if you buy over $100 in desserts, get 10% off of them".
 
