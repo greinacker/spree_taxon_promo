@@ -1,0 +1,10 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+.rvmrc
+webrat.log
+dump.rdb
+.DS_Store
+public/spree/
+public/assets/
