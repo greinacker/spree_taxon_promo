@@ -18,4 +18,10 @@ To use, just add to your gemfile:
 
 `gem 'spree_taxon_promo', :git => 'git://github.com/greinacker/spree_taxon_promo'`
 
+## Contributors
+
+- Scott Wagner
+
+## License
+
 Copyright (c) 2012 Greg Reinacker, released under the New BSD License
