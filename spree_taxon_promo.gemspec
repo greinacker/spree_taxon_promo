@@ -2,10 +2,10 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_taxon_promo'
-  s.version     = '1.1.0'
+  s.version     = '2.1.0'
   s.summary     = 'A promotion that can be applied to products in a specific taxon'
   s.description = ''
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 2.0.0'
 
   s.author    = 'Greg Reinacker'
   s.email     = 'gregr@rassoc.com'

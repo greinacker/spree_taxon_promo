@@ -4,7 +4,7 @@ module Spree
     preference :operator, :string, :default => '>'
     preference :taxon, :string, :default => ''
 
-    attr_accessible :preferred_amount, :preferred_operator, :preferred_taxon
+    attr_accessor :preferred_amount, :preferred_operator, :preferred_taxon
 
     OPERATORS = ['gt', 'gte']
 
