@@ -10,7 +10,7 @@ module SpreeTaxonPromo
     end
 
     initializer "spree.promo.register.promotions.rules" do |app|
-      app.config.spree.promotions.rules += [Spree::Promotion::Rules::ProductBuyTaxonTotal]
+      app.config.spree.promotions.rules << Spree::Promotion::Rules::ProductBuyTaxonTotal
     end
 
     initializer 'spree.promo.register.taxon_calculators', :after => "spree.promo.register.promotion.calculators"  do |app|
