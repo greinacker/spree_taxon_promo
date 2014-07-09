@@ -1,17 +1,17 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+es:
   spree:
     hello: "Hello world"
     promotion_rule_types:
       product_buy_taxon_total:
-        name: Item total from taxon
-        description: Order total from specific taxon exceeds amount
+        name: Por Taxon
+        description: Pedido total por el taxon específico
 
-    tem_total_rule:
-      operators:
-        gt: "Greater than"
-        gte: "Greater than or equal"
+  item_total_rule:
+    operators:
+      gt: "Mayor que"
+      gte: "Mayor que o igual"
 
-  flat_percent_taxon: Flat percent of taxon total
+  flat_percent_taxon: Porcentaje fijo del taxon total
