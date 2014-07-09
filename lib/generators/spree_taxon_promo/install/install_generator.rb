@@ -4,7 +4,7 @@ module SpreeTaxonPromo
 
       def add_javascripts
         # append_file 'app/assets/javascripts/store/all.js', "//= require store/spree_taxon_promo\n"
-        # append_file 'app/assets/javascripts/admin/all.js', "//= require admin/spree_taxon_promo\n"
+        append_file 'app/assets/javascripts/admin/all.js', "//= require admin/spree_taxon_promo\n"
       end
 
       def add_stylesheets
