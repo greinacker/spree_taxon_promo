@@ -5,8 +5,10 @@
     <%= text_field_tag "#{param_prefix}[preferred_amount]", promotion_rule.preferred_amount, :size => 10 %>
   </label>
 
+  <p>
   <label for="<%= "#{param_prefix}_preferred_taxon" %>">
     <%= "Taxon" %>
-    <%= text_field_tag "#{param_prefix}[preferred_taxon]", promotion_rule.preferred_taxon, :size => 20 %>
-  </label>
+    <%= text_field_tag "#{param_prefix}[preferred_taxon]", promotion_rule.preferred_taxon, data: {taxon_select: '1'}, size: 20 %>
+  </label><br/>
+  </p>
 </p>
