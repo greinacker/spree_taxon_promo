@@ -3,7 +3,7 @@ module Spree
     preference :flat_percent, :decimal, :default => 0
     preference :taxon, :string, :default => ''
     
-    attr_accessible :preferred_flat_percent, :preferred_taxon
+    # attr_accessible :preferred_flat_percent, :preferred_taxon
 
     def self.description
       I18n.t(:flat_percent_taxon)
