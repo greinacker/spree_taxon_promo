@@ -2,9 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
-  promotion_rule_types:
-    product_buy_taxon_total:
-      name: Item total from taxon
-      description: Order total from specific taxon exceeds amount
-  flat_percent_taxon: Flat percent of taxon total
+  spree:
+    promotion_rule_types:
+      product_buy_taxon_total:
+        name: "Item total from taxon"
+        description: "Order total from specific taxon exceeds amount"
+    flat_percent_taxon: "Flat percent of taxon total"
