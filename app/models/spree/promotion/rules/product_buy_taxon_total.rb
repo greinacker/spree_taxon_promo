@@ -17,8 +17,13 @@ module Spree
 
     def eligible?(order, options = {})
       item_total = 0.0
+      match_taxons = preferred_taxon.split(',')
       order.line_items.each do |line_item|
-        item_total += line_item.amount if line_item.product.taxons.where(:name => preferred_taxon).present?
+        matched = false
+        match_taxons.each do |tx|
+          matched = true if line_item.product.taxons.where(:name => tx).present?
+        end
+        item_total += line_item.amount if matched
       end
       # item_total.send(preferred_operator == 'gte' ? :>= : :>, BigDecimal.new(preferred_amount.to_s))
 
@@ -32,7 +37,13 @@ module Spree
     end
 
     def actionable?(line_item)
-      line_item.product.taxons.where(:name => preferred_taxon).present?
+      match_taxons = preferred_taxon.split(',')
+      order.line_items.each do |line_item|
+        match_taxons.each do |tx|
+          return true if line_item.product.taxons.where(:name => tx).present?
+        end
+      end
+      return false
     end
 
     private

@@ -14,6 +14,14 @@ You could have a promo that said something like "if you buy over $100 in dessert
 
 There are two parts - the promotion, and the calculator. These can be used separately, or together. The calculator lets you create an adjustment for "10% off of desserts", as opposed to the regular flat percent calculator that will let you have "10% off".
 
+Multiple promotions are supported by separating them with commas. For example, using
+
+```
+Cookies,Cake
+```
+
+will match if the item is in either the Cookies or Cake taxons.
+
 To use, just add to your gemfile:
 
 `gem 'spree_taxon_promo', :git => 'git://github.com/greinacker/spree_taxon_promo'`
