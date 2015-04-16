@@ -37,11 +37,10 @@ module Spree
     end
 
     def actionable?(line_item)
+
       match_taxons = preferred_taxon.split(',')
-      order.line_items.each do |line_item|
-        match_taxons.each do |tx|
-          return true if line_item.product.taxons.where(:name => tx).present?
-        end
+      match_taxons.each do |tx|
+        return true if line_item.product.taxons.where(:name => tx).present?
       end
       return false
     end
